@@ -1,6 +1,6 @@
 import praw
 from win10toast import ToastNotifier
-from _config import myClientId, mClientSecret, myUserAgent, searchSub, searchFlairs
+from config import myClientId, mClientSecret, myUserAgent, searchSub, searchFlairs
 
 reddit = praw.Reddit(client_id=myClientId, client_secret=mClientSecret, user_agent=myUserAgent)
 subreddit = reddit.subreddit(searchSub)
